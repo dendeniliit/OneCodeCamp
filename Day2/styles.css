@@ -1,0 +1,117 @@
+/* h1{
+    color: brown;
+}
+
+.title {
+    background-color: gray;
+}
+
+#id-title {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, 
+    Verdana, sans-serif;
+
+}
+
+h1{
+    color: violet;
+}
+ */
+/* 
+ h3{
+    display: inline;
+    width: 300px;
+    height: 120px;
+    background-color: gray;
+    padding: 6px 11px 4px 9px;
+    border: 3px dotted brown;
+    margin: 10px 5px 10px 5px violet;
+    box-sizing: content-box;
+ } */
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+ }
+
+ header,nav, main,footer{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    grid-template-columns: 100%;
+ }
+
+ header, footer{
+    position: sticky;
+    background-color: chocolate;
+    color: azure;
+ }
+
+ header{
+    top: 0;
+ }
+
+ main{
+    flex-grow: 1;
+ }
+ footer{
+
+    bottom: 0;
+ }
+ nav{
+    background-color: cadetblue;
+    padding: 0.5rem;
+    border-bottom: 2px solid plum;
+ }
+
+ /* mobile */
+
+ @media screen and (max-width: 480){
+    body{
+        background-color: lightgreen;
+
+    }
+
+    h1,h2{
+        font-size: 1.5rem;
+    }
+ }
+
+ /* tablets */
+ @media screen and (min-width: 481px){
+    body{
+        background-color: lightcoral;
+    }
+ }
+
+ /* laptops */
+
+ @media screen and (min-width: 769px){
+    body{
+        background-color: lightseagreen;
+    }
+ }
+
+ /* monitors */
+
+ @media screen and (min-width: 1025px){
+    body{
+        background-color: lightsalmon;
+    }
+ }
+
+ /* tv */
+ @media screen and (min-width: 1021px){
+    body{
+        background-color: lightskyblue;
+    }
+ }

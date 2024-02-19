@@ -1,0 +1,80 @@
+body {
+    padding-top: 56px;
+    background-color: #f8f9fa; 
+    color: #39343f; 
+}
+
+nav.navbar {
+    background-color: #aa00ff; 
+}
+
+nav.navbar a.navbar-brand,
+nav.navbar button.navbar-toggler {
+    color: #ffffff; 
+}
+
+header {
+    background-color: #722fc3; 
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+section {
+    background-color: #ffffff; 
+    padding: 40px 0;
+    border-bottom: 1px solid #dee2e6; 
+}
+
+section h2 {
+    color: #2f074d; 
+}
+
+.card {
+    background-color: #dad0ee;
+    border: 1px solid #ae8cd6; 
+}
+
+form {
+    background-color: #ffffff; 
+    padding: 20px;
+    border: 1px solid #dee2e6; 
+    border-radius: 10px;
+}
+
+form label,
+form button {
+    color: #482ba1; 
+}
+
+footer {
+    background-color: #360c5e; 
+    color: #ffffff; 
+    padding: 10px 0;
+}
+
+.btn-violet {
+    background-color: #8a2be2; 
+    border-color: #8a2be2; 
+    color: #ffffff;
+}
+
+
+.btn-outline-violet {
+    color: #8a2be2; /* Violet color */
+    border-color: #8a2be2; /* Border color */
+}
+
+.btn-outline-violet:hover {
+    color: #ffffff; /* Text color on hover */
+    background-color: #8a2be2; /* Background color on hover */
+}
+
+.custom-border {
+    border-left: 10px solid #8a2be2; /* Violet border color */
+    padding-left: 0; /* Remove default padding */
+}
+
+.bg-violet {
+    background-color: rgb(177, 130, 238);
+    align-items: center;
+  }

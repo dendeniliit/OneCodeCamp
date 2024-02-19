@@ -3,135 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Allyza Denisse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#organization">Organization</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cert">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <header>
-        <center><h1>Portfolio</h1></center>
+        <p class="lead text-center display-1 fw-bold">Portfolio</p>
     </header>
 
-
-    <main>
+    <main class="container mt-4">
         <!-- about me -->
         <section id="about-me">
             <article>
-                <h2>About Me</h2>
-                <table>
-                    <tr>
-                        <td>
-                        <center><img src="/pic29.jpg" width="100" height="100" alt="about me"></center>
-                        </td>
-                        <td>
-                            <p>
-                                <h3> &ensp; Hello,
-                                I'm Allyza Denisse Bispo. I am an aspiring Software Engineer.</h3> 
-                                &ensp; My goal is to explore different Tech stack and continuous learning in the Tech industry.
-                            </p>
-                        </td>
-                    </tr>
-                </table>
+                <h2 class="display-4">About Me</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="/pic29.jpg" class="img-fluid" alt="Allyza Denisse's photo">
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            <h3>Hello, I'm Allyza Denisse Bispo. I am an aspiring Software Engineer.</h3>
+                            My goal is to explore different Tech stacks and continuously learn in the Tech industry.
+                        </p>
+                    </div>
+                </div>
             </article>
         </section>
 
-        <!--skills-->
+        <!-- skills -->
         <section id="skills">
             <article>
-                <h2>Skills</h2>
-                <ul>
-                    <li>User Research</li>
-                    <li>Data Entry & Management</li>
-                    <li>Project Management Basics</li>
-                    <li>Design Tool: Figma</li>
-                    <li>Database: MySQL</li>
-                    <li>Back-End Tech: PHP, c++, Python, Dart & Frameworks (Flutter)</li>
+                <h2 class="display-4">Skills</h2>
+                <ul class="list-group">
+                    <li class="list-group-item m-3 p-3 custom-border">User Research</li>
+                    <li class="list-group-item m-3 p-3 custom-border">Data Entry & Management</li>
+                    <li class="list-group-item m-3 p-3 custom-border">Project Management Basics</li>
+                    <li class="list-group-item m-3 p-3 custom-border">Design Tool: Figma</li>
+                    <li class="list-group-item m-3 p-3 custom-border">Database: MySQL</li>
+                    <li class="list-group-item m-3 p-3 custom-border">Back-End Tech: PHP, C++, Python, Dart & Frameworks (Flutter)</li>
                 </ul>
             </article>
         </section>
 
-        <!-- hobbies-->
+        <!-- hobbies -->
         <section id="hobbies">
             <article>
-                <h2>Hobbies</h2>
-                <ul>
-                    <li>Art</li>
-                    <li>Movies</li>
-                    <li>Anime</li>
-                    <li>Game</li>
-                    <li>Travel</li>
+                <h2 class="display-4">Hobbies</h2>
+                <ul class="list-group">
+                    <li class="list-group-item border-pill bg-violet">Art</li>
+                    <li class="list-group-item ">Movies</li>
+                    <li class="list-group-item border-pill bg-violet">Anime</li>
+                    <li class="list-group-item " >Game</li>
+                    <li class="list-group-item border-pill bg-violet">Travel</li>
                 </ul>
             </article>
         </section>
 
-        <!-- organization-->
+        <!-- organization -->
         <section id="organization">
             <article>
-                <h2>Organization and Experiences</h2>
-                <ul>
-                    <li>
-                        <strong>League of Information Technology Students</strong> - Treasurer
-                        <p> As a Treasurer, I am responsible for the reimbursement and funds within the organization. I am also one of the project head in the major events in the org since I have more experience than the other officers. </p>
-                    </li>
-                    <li>
-                        <strong>Google Developer Student Clubs</strong> - Associate Mobile Development Lead
-                        <p> My responsibility is to share knowledge about mobile development to the University of the East studemts. Organizing a webinar and hands on activities for the students to gain real-life experience in mobile development.</p>
-                    </li>
-                    <li>
-                        <strong>Zenith Esports</strong> - Mobile Legend Manager
-                        <p>Besides joining organization that aligns with my career goals, I also join Esports for fun. I handle 2 Mobile Legend main teams of University of the East Caloocan. I am responsible to manage and keep track of their plays.</p>
-                    </li>
-                </ul>
+                <h2 class="display-4">Organization and Experiences</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">League of Information Technology Students - Treasurer</h5>
+                        <p class="card-text">As a Treasurer, I am responsible for the reimbursement and funds within the organization. 
+                            I am also one of the project heads in the major events in the org since I have more experience than the other officers. </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Google Developer Student Clubs - Associate Mobile Development Lead  </h5>
+                        <p class="card-text">My responsibility is to share knowledge about mobile development with the University of the East students. 
+                            Organizing a webinar and hands-on activities for the students to gain real-life experience in mobile development.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Zenith Esports - Mobile Legends Manager</h5>
+                        <p class="card-text">Besides joining organizations that align with my career goals, I also join Esports for fun. 
+                            I handle 2 Mobile Legend main teams of the University of the East Caloocan. I am responsible for managing and keeping track of their plays.</p>
+                    </div>
+                </div>
+                
             </article>
         </section>
 
-        <!-- certificates-->
+        <!-- certificates -->
         <section id="cert">
             <article>
-                <h2>Certificates</h2>
-                <ul>
-                    <li>Foundation of User Experience (UX) Design</li>
-                    <li>Start the UX Design Process: Emphatize, Define, & Ideate</li>
-                </ul>
+                <h2 class="display-4">Certificates</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Foundation of User Experience (UX) Design</h5>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Start the UX Design Process: Empathize, Define, & Ideate</h5>
+                    </div>
+                </div>
+                
             </article>
         </section>
 
-        <!-- contact-->
+        <!-- contact -->
         <section id="contact">
             <article>
-                <center><h2>Contact</h2>
-                <form action="mailto:allyzadenisse29@gmail.com" method="">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required><br>
-        
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br>
-        
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
-        
-                    <input type="submit" value="Send Email">
-                </form> 
-                <p>
-                    You can email me at <a href="mailto:allyzadenisse29@gmail.com">allyzadenisse29@gmail.com</a>.
-                </p>
-                <p>
-                    Connect with me on theses social media:
-                    <ul>
-                        <li><a href="https://www.facebook.com/profile.php?id=100085436934987"> Facebook</a></li>
-                        <li><a href="https://www.linkedin.com/in/denissebispo/">LinkedIn</a></li>
-                        <li><a href="https://github.com/dendeniliit">GitHub</a></li>
+                <center><h2 class="display-4">Contact</h2></center>
+                <form action="mailto:allyzadenisse29@gmail.com" method="post">
+                    <div class="mb-3 shadow-sm">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+
+                    <div class="mb-3 shadow-sm">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+
+                    <div class="mb-3 shadow-sm">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-violet">Send Email</button>
+                </form>
+                <p class="text-center">
+                    Connect with me on social media:
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100085436934987" class="btn btn-outline-violet">Facebook</a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/denissebispo/" class="btn btn-outline-violet">LinkedIn</a></li>
+                        <li class="list-inline-item"><a href="https://github.com/dendeniliit" class="btn btn-outline-violet">Github</a></li>
                     </ul>
-                </p>
-            </center>
-            </article>
-        </section>
-
-    </main>
-
-
-    <footer>
-       <center> <p>&copy; 2024 Allyza Denisse. All rights reserved.</p></center>
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 Allyza Denisse. All rights reserved.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 
